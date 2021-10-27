@@ -7,8 +7,8 @@ test.each([
 ])(
   ('Test level health'),
   (object, expected) => {
-  const resalt = healthLevel(object);
+    const resalt = healthLevel(object);
 
-  expect(resalt).toBe(expected);
+    expect(resalt).toBe(expected);
   },
 );
