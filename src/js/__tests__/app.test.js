@@ -1,4 +1,5 @@
 import healthLevel from '../app';
+
 test.each([
     [{name: 'Маг', health: 60}, 'healthy'],
     [{name: 'Маг', health: 40}, 'wounded'],
@@ -6,7 +7,8 @@ test.each([
 ])(
     ('Test level health'),
     (object, expected) => {
-        let resalt = healthLevel(object);
+        const resalt = healthLevel(object);
+
         expect(resalt).toBe(expected);
     }
-)
+);

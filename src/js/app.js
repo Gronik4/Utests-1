@@ -1,4 +1,13 @@
 export default function healthLevel(item) {
-    let level = item.health >= 50? 'healthy': item.health >= 15? 'wounded': 'critical';
+    let level;
+    if(item.health >= 50) {
+        level = 'healthy';
+    } else {
+        if(item.health >= 15) {
+            level = 'wounded';
+        } else {
+            level = 'critical';
+        }
+    }
     return level;
 }
