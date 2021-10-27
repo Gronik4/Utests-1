@@ -1,8 +1,6 @@
 import healthLevel from '../app';
 
-test.each([
-[{ name: 'Маг', health: 60 }, 'healthy'],
-[{ name: 'Маг', health: 40 }, 'wounded'],
+test.each([  [{ name: 'Маг', health: 60 }, 'healthy'],  [{ name: 'Маг', health: 40 }, 'wounded'],
 [{ name: 'Маг', health: 12 }, 'critical'],
 ])(
 ('Test level health'),
